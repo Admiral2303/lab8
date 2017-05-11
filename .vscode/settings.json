@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"clang.cxxflags": [
+		"-I./include",
+		"-I../include",
+		"-c",
+		"-std=c++11",
+		"-Werror",
+		"-Wall"
+    ],
+    "files.associations": {
+        "mutex": "cpp",
+        "fstream": "cpp"
+    }
+}

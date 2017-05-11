@@ -1,6 +1,6 @@
 #include "places.h"
 
-places::places(int id,QString name,QString location)
+places::places(int id,string name,string location)
 {
     this->name = name;
     this->id = id;
@@ -11,10 +11,10 @@ int places:: get_id(){
     return this->id;
 }
 
-QString places:: get_name(){
+string places:: get_name(){
     return this->name;
 }
 
-QString places:: get_location(){
+string places:: get_location(){
     return this->location;
 }
