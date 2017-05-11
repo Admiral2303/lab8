@@ -11,8 +11,8 @@ using namespace std;
 
 int main(void)
 {
-//  tcpServer();
-   tcpWebClient();
+  tcpServer();
+//   tcpWebClient();
 //    {
 
 //        QFile file(":/data/data.txt"); // создаем объект класса QFile
