@@ -12,5 +12,5 @@ before_install:
 
 script: 
   - cmake . 
-  - make .
+  - make
   - make json
