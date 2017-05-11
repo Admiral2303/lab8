@@ -17,21 +17,21 @@ SOURCES += tcp_client.cpp\
     places.cpp
 
 
-    unix:!macx: LIBS += -L$$PWD/../../../../../../../usr/local/lib/ -lprogbase-cpp
+#    unix:!macx: LIBS += -L$$PWD/../../../../../../../usr/local/lib/ -lprogbase-cpp
 
-    INCLUDEPATH += $$PWD/../../../../../../../usr/local/include
-    DEPENDPATH += $$PWD/../../../../../../../usr/local/include
+#    INCLUDEPATH += $$PWD/../../../../../../../usr/local/include
+#    DEPENDPATH += $$PWD/../../../../../../../usr/local/include
 
-    unix:!macx: PRE_TARGETDEPS += $$PWD/../../../../../../../usr/local/lib/libprogbase-cpp.a
+#    unix:!macx: PRE_TARGETDEPS += $$PWD/../../../../../../../usr/local/lib/libprogbase-cpp.a
 
-    unix:!macx: LIBS += -L$$PWD/../../../../../../../usr/local/lib/ -lprogbase
+#    unix:!macx: LIBS += -L$$PWD/../../../../../../../usr/local/lib/ -lprogbase
 
-    INCLUDEPATH += $$PWD/../../../../../../../usr/local/include
-    DEPENDPATH += $$PWD/../../../../../../../usr/local/include
+#    INCLUDEPATH += $$PWD/../../../../../../../usr/local/include
+#    DEPENDPATH += $$PWD/../../../../../../../usr/local/include
 
-    unix:!macx: PRE_TARGETDEPS += $$PWD/../../../../../../../usr/local/lib/libprogbase.a
+#    unix:!macx: PRE_TARGETDEPS += $$PWD/../../../../../../../usr/local/lib/libprogbase.a
 
-    unix:!macx: LIBS += -lssl
+#    unix:!macx: LIBS += -lssl
 
 HEADERS += \
     places.h \
