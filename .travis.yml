@@ -1,26 +1,15 @@
-sudo: required
 language: cpp
-os:
-  - linux
-compiler: g++
-dist: trusty
+compiler:
+  - gcc
+  - clang
 
 before_install:
-  - sudo apt-get install libssl-dev
-  - sh scripts/install-libprogbase.sh
-  - sudo add-apt-repository ppa:beineri/opt-qt58-trusty -y
-  - sudo apt-get update -qq
+ - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
+ - sudo apt-get update -qq
+ - sudo apt-get install qtbase5-dev qtdeclarative5-dev libqt5webkit5-dev libsqlite3-dev
+ - sudo apt-get install qt5-default qttools5-dev-tools
 
-install:
-  - sudo apt-get -y install qt58base qt58xmlpatterns qt58translations qt58tools qt58svg zlib1g-dev
-  - source /opt/qt5*/bin/qt5*-env.sh
-  
-script: 
-  - mkdir build
-  - cd build
-  - cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-  - make -j4
-  - sudo make DESTDIR=appdir install ; sudo chown -R $USER appdir ; find appdir
-  - $CXX --version
-  - cmake . 
-- make .
+script:
+ - qmake -project
+ - qmake lab8.pro
+ - make
