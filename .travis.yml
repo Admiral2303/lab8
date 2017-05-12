@@ -1,16 +1,14 @@
 sudo: required
-language: cpp
+language: c
 os:
   - linux
 compiler: 
-  - g++	
+  - gcc
 
 before_install:
-  - sudo apt-get install libjansson4 libjansson-dev
   - sudo apt-get install libssl-dev
   - sh scripts/install-libprogbase.sh
 
 script: 
   - cmake . 
-  - make
-  - make json
+  - make .

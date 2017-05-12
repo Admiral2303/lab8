@@ -1,0 +1,7 @@
+/home/vadim/lab8/gitg/lab8/build/CMakeFiles/install.dir
+/home/vadim/lab8/gitg/lab8/build/CMakeFiles/list_install_components.dir
+/home/vadim/lab8/gitg/lab8/build/CMakeFiles/rebuild_cache.dir
+/home/vadim/lab8/gitg/lab8/build/CMakeFiles/json.dir
+/home/vadim/lab8/gitg/lab8/build/CMakeFiles/install/strip.dir
+/home/vadim/lab8/gitg/lab8/build/CMakeFiles/install/local.dir
+/home/vadim/lab8/gitg/lab8/build/CMakeFiles/edit_cache.dir
