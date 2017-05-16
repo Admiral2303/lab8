@@ -1,3 +1,7 @@
+
+/** @file
+    @brief Generic list abstract data type
+*/
 #include "places.h"
 
 places::places(int id,string name,string location)

@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/vadim/lab8/gitg/lab8/build",
+  "command": "/usr/bin/c++    -I/home/vadim/lab8/gitg/lab8/include  -std=c++11 -g -g   -o CMakeFiles/json.dir/main.cpp.o -c /home/vadim/lab8/gitg/lab8/main.cpp",
+  "file": "/home/vadim/lab8/gitg/lab8/main.cpp"
+},
+{
+  "directory": "/home/vadim/lab8/gitg/lab8/build",
+  "command": "/usr/bin/c++    -I/home/vadim/lab8/gitg/lab8/include  -std=c++11 -g -g   -o CMakeFiles/json.dir/src/places.cpp.o -c /home/vadim/lab8/gitg/lab8/src/places.cpp",
+  "file": "/home/vadim/lab8/gitg/lab8/src/places.cpp"
+},
+{
+  "directory": "/home/vadim/lab8/gitg/lab8/build",
+  "command": "/usr/bin/c++    -I/home/vadim/lab8/gitg/lab8/include  -std=c++11 -g -g   -o CMakeFiles/json.dir/src/tcp_client.cpp.o -c /home/vadim/lab8/gitg/lab8/src/tcp_client.cpp",
+  "file": "/home/vadim/lab8/gitg/lab8/src/tcp_client.cpp"
+},
+{
+  "directory": "/home/vadim/lab8/gitg/lab8/build",
+  "command": "/usr/bin/c++    -I/home/vadim/lab8/gitg/lab8/include  -std=c++11 -g -g   -o CMakeFiles/json.dir/src/tcp_server.cpp.o -c /home/vadim/lab8/gitg/lab8/src/tcp_server.cpp",
+  "file": "/home/vadim/lab8/gitg/lab8/src/tcp_server.cpp"
+}
+]

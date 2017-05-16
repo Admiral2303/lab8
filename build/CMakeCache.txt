@@ -171,10 +171,13 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-json_BINARY_DIR:STATIC=/home/vadim/lab8/gitg/lab8/build
+https_server_BINARY_DIR:STATIC=/home/vadim/lab8/gitg/lab8/build
 
-//Dependencies for target
-json_LIB_DEPENDS:STATIC=
+//Value Computed by CMake
+https_server_SOURCE_DIR:STATIC=/home/vadim/lab8/gitg/lab8
+
+//Value Computed by CMake
+json_BINARY_DIR:STATIC=/home/vadim/lab8/gitg/lab8/build
 
 //Value Computed by CMake
 json_SOURCE_DIR:STATIC=/home/vadim/lab8/gitg/lab8

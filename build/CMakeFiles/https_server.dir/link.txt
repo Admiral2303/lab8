@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Werror -Wall -g -g   CMakeFiles/https_server.dir/main.cpp.o CMakeFiles/https_server.dir/src/places.cpp.o CMakeFiles/https_server.dir/src/tcp_client.cpp.o CMakeFiles/https_server.dir/src/tcp_server.cpp.o  -o https_server -rdynamic -lprogbase-cpp -lprogbase -lssl -ljansson 

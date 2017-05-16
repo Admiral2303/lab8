@@ -57,7 +57,130 @@ include CMakeFiles/json.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/json.dir/flags.make
 
-CMakeFiles/json.dir/requires:
+CMakeFiles/json.dir/main.cpp.o: CMakeFiles/json.dir/flags.make
+CMakeFiles/json.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vadim/lab8/gitg/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/json.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json.dir/main.cpp.o -c /home/vadim/lab8/gitg/lab8/main.cpp
+
+CMakeFiles/json.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vadim/lab8/gitg/lab8/main.cpp > CMakeFiles/json.dir/main.cpp.i
+
+CMakeFiles/json.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vadim/lab8/gitg/lab8/main.cpp -o CMakeFiles/json.dir/main.cpp.s
+
+CMakeFiles/json.dir/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/json.dir/main.cpp.o.requires
+
+CMakeFiles/json.dir/main.cpp.o.provides: CMakeFiles/json.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/json.dir/main.cpp.o.provides
+
+CMakeFiles/json.dir/main.cpp.o.provides.build: CMakeFiles/json.dir/main.cpp.o
+
+
+CMakeFiles/json.dir/src/places.cpp.o: CMakeFiles/json.dir/flags.make
+CMakeFiles/json.dir/src/places.cpp.o: ../src/places.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vadim/lab8/gitg/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/json.dir/src/places.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/places.cpp.o -c /home/vadim/lab8/gitg/lab8/src/places.cpp
+
+CMakeFiles/json.dir/src/places.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/places.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vadim/lab8/gitg/lab8/src/places.cpp > CMakeFiles/json.dir/src/places.cpp.i
+
+CMakeFiles/json.dir/src/places.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/places.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vadim/lab8/gitg/lab8/src/places.cpp -o CMakeFiles/json.dir/src/places.cpp.s
+
+CMakeFiles/json.dir/src/places.cpp.o.requires:
+
+.PHONY : CMakeFiles/json.dir/src/places.cpp.o.requires
+
+CMakeFiles/json.dir/src/places.cpp.o.provides: CMakeFiles/json.dir/src/places.cpp.o.requires
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/places.cpp.o.provides.build
+.PHONY : CMakeFiles/json.dir/src/places.cpp.o.provides
+
+CMakeFiles/json.dir/src/places.cpp.o.provides.build: CMakeFiles/json.dir/src/places.cpp.o
+
+
+CMakeFiles/json.dir/src/tcp_client.cpp.o: CMakeFiles/json.dir/flags.make
+CMakeFiles/json.dir/src/tcp_client.cpp.o: ../src/tcp_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vadim/lab8/gitg/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/json.dir/src/tcp_client.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/tcp_client.cpp.o -c /home/vadim/lab8/gitg/lab8/src/tcp_client.cpp
+
+CMakeFiles/json.dir/src/tcp_client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/tcp_client.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vadim/lab8/gitg/lab8/src/tcp_client.cpp > CMakeFiles/json.dir/src/tcp_client.cpp.i
+
+CMakeFiles/json.dir/src/tcp_client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/tcp_client.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vadim/lab8/gitg/lab8/src/tcp_client.cpp -o CMakeFiles/json.dir/src/tcp_client.cpp.s
+
+CMakeFiles/json.dir/src/tcp_client.cpp.o.requires:
+
+.PHONY : CMakeFiles/json.dir/src/tcp_client.cpp.o.requires
+
+CMakeFiles/json.dir/src/tcp_client.cpp.o.provides: CMakeFiles/json.dir/src/tcp_client.cpp.o.requires
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/tcp_client.cpp.o.provides.build
+.PHONY : CMakeFiles/json.dir/src/tcp_client.cpp.o.provides
+
+CMakeFiles/json.dir/src/tcp_client.cpp.o.provides.build: CMakeFiles/json.dir/src/tcp_client.cpp.o
+
+
+CMakeFiles/json.dir/src/tcp_server.cpp.o: CMakeFiles/json.dir/flags.make
+CMakeFiles/json.dir/src/tcp_server.cpp.o: ../src/tcp_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vadim/lab8/gitg/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/json.dir/src/tcp_server.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/json.dir/src/tcp_server.cpp.o -c /home/vadim/lab8/gitg/lab8/src/tcp_server.cpp
+
+CMakeFiles/json.dir/src/tcp_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/json.dir/src/tcp_server.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vadim/lab8/gitg/lab8/src/tcp_server.cpp > CMakeFiles/json.dir/src/tcp_server.cpp.i
+
+CMakeFiles/json.dir/src/tcp_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/json.dir/src/tcp_server.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vadim/lab8/gitg/lab8/src/tcp_server.cpp -o CMakeFiles/json.dir/src/tcp_server.cpp.s
+
+CMakeFiles/json.dir/src/tcp_server.cpp.o.requires:
+
+.PHONY : CMakeFiles/json.dir/src/tcp_server.cpp.o.requires
+
+CMakeFiles/json.dir/src/tcp_server.cpp.o.provides: CMakeFiles/json.dir/src/tcp_server.cpp.o.requires
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/tcp_server.cpp.o.provides.build
+.PHONY : CMakeFiles/json.dir/src/tcp_server.cpp.o.provides
+
+CMakeFiles/json.dir/src/tcp_server.cpp.o.provides.build: CMakeFiles/json.dir/src/tcp_server.cpp.o
+
+
+# Object files for target json
+json_OBJECTS = \
+"CMakeFiles/json.dir/main.cpp.o" \
+"CMakeFiles/json.dir/src/places.cpp.o" \
+"CMakeFiles/json.dir/src/tcp_client.cpp.o" \
+"CMakeFiles/json.dir/src/tcp_server.cpp.o"
+
+# External object files for target json
+json_EXTERNAL_OBJECTS =
+
+json: CMakeFiles/json.dir/main.cpp.o
+json: CMakeFiles/json.dir/src/places.cpp.o
+json: CMakeFiles/json.dir/src/tcp_client.cpp.o
+json: CMakeFiles/json.dir/src/tcp_server.cpp.o
+json: CMakeFiles/json.dir/build.make
+json: CMakeFiles/json.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vadim/lab8/gitg/lab8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable json"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/json.dir/link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+CMakeFiles/json.dir/build: json
+
+.PHONY : CMakeFiles/json.dir/build
+
+CMakeFiles/json.dir/requires: CMakeFiles/json.dir/main.cpp.o.requires
+CMakeFiles/json.dir/requires: CMakeFiles/json.dir/src/places.cpp.o.requires
+CMakeFiles/json.dir/requires: CMakeFiles/json.dir/src/tcp_client.cpp.o.requires
+CMakeFiles/json.dir/requires: CMakeFiles/json.dir/src/tcp_server.cpp.o.requires
 
 .PHONY : CMakeFiles/json.dir/requires
 

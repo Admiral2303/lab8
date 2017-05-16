@@ -56,27 +56,16 @@ CMAKE_BINARY_DIR = /home/vadim/lab8/gitg/lab8/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -88,39 +77,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -167,19 +123,135 @@ json/fast:
 	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/build
 .PHONY : json/fast
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/places.o: src/places.cpp.o
+
+.PHONY : src/places.o
+
+# target to build an object file
+src/places.cpp.o:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/places.cpp.o
+.PHONY : src/places.cpp.o
+
+src/places.i: src/places.cpp.i
+
+.PHONY : src/places.i
+
+# target to preprocess a source file
+src/places.cpp.i:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/places.cpp.i
+.PHONY : src/places.cpp.i
+
+src/places.s: src/places.cpp.s
+
+.PHONY : src/places.s
+
+# target to generate assembly for a file
+src/places.cpp.s:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/places.cpp.s
+.PHONY : src/places.cpp.s
+
+src/tcp_client.o: src/tcp_client.cpp.o
+
+.PHONY : src/tcp_client.o
+
+# target to build an object file
+src/tcp_client.cpp.o:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/tcp_client.cpp.o
+.PHONY : src/tcp_client.cpp.o
+
+src/tcp_client.i: src/tcp_client.cpp.i
+
+.PHONY : src/tcp_client.i
+
+# target to preprocess a source file
+src/tcp_client.cpp.i:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/tcp_client.cpp.i
+.PHONY : src/tcp_client.cpp.i
+
+src/tcp_client.s: src/tcp_client.cpp.s
+
+.PHONY : src/tcp_client.s
+
+# target to generate assembly for a file
+src/tcp_client.cpp.s:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/tcp_client.cpp.s
+.PHONY : src/tcp_client.cpp.s
+
+src/tcp_server.o: src/tcp_server.cpp.o
+
+.PHONY : src/tcp_server.o
+
+# target to build an object file
+src/tcp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/tcp_server.cpp.o
+.PHONY : src/tcp_server.cpp.o
+
+src/tcp_server.i: src/tcp_server.cpp.i
+
+.PHONY : src/tcp_server.i
+
+# target to preprocess a source file
+src/tcp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/tcp_server.cpp.i
+.PHONY : src/tcp_server.cpp.i
+
+src/tcp_server.s: src/tcp_server.cpp.s
+
+.PHONY : src/tcp_server.s
+
+# target to generate assembly for a file
+src/tcp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/json.dir/build.make CMakeFiles/json.dir/src/tcp_server.cpp.s
+.PHONY : src/tcp_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... list_install_components"
+	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... json"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... edit_cache"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/places.o"
+	@echo "... src/places.i"
+	@echo "... src/places.s"
+	@echo "... src/tcp_client.o"
+	@echo "... src/tcp_client.i"
+	@echo "... src/tcp_client.s"
+	@echo "... src/tcp_server.o"
+	@echo "... src/tcp_server.i"
+	@echo "... src/tcp_server.s"
 .PHONY : help
 
 

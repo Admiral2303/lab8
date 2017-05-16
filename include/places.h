@@ -1,3 +1,6 @@
+/** @file
+    @brief Generic list abstract data type
+*/
 #ifndef PLACES_H
 #define PLACES_H
 #include <string>

@@ -13,7 +13,7 @@ int tcpWebClient(void) {
     NetMessage message(1000);
     try {
         client.connect(IpAddress("127.0.0.1", 3001));
-        message.setDataString("GET /file/data HTTP/1.0\r\nHost: Localhost \r\n\r\n");
+        message.setDataString("GET /favorites?location=Uman / HTTP/1.0\r\nHost: Localhost \r\n\r\n");
         client.send(message);
         cout << ">> Request sent" << endl;
         do {
